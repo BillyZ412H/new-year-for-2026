@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026新年快乐 - 跨年祝福</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 页面容器 -->
+    <div class="pages-container">
+        <!-- 第一页 -->
+        <section class="page active" id="page1">
+            <div class="content">
+                <div class="date-display" id="current-date">2025年12月31日</div>
+                <h1 class="main-title" id="page1-title">当您看到这个网页时，已经2026了！</h1>
+                <div class="fireworks-container" id="fireworks1"></div>
+                <div class="instruction">
+                    <div class="arrow-down">
+                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="page-number">1 / 3</div>
+        </section>
+
+        <!-- 第二页 -->
+        <section class="page" id="page2">
+            <div class="content">
+                <div class="date-display">2025 → 2026</div>
+                <div class="poetic-text">
+                    <p class="line">🎊“²⁰²⁵𓆱²⁰²⁶ 🧨</p>
+                    <p class="line">“是结束，</p>
+                    <p class="line">也是开始”</p>
+                    <p class="line">𝟮𝟬𝟮𝟱·完美谢幕啦🎆</p>
+                </div>
+                <div class="fireworks-container" id="fireworks2"></div>
+                <div class="instruction">
+                    <div class="arrow-down">
+                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="page-number">2 / 3</div>
+        </section>
+
+        <!-- 第三页 -->
+        <section class="page" id="page3">
+            <div class="content">
+                <div class="date-display">2026年1月1日</div>
+                <div class="blessing-text">
+                    <p class="line">2026启新元，愿你岁岁常欢愉，年年皆胜意，平安伴左右，万象更新，新岁里有热爱可奔赴，万事皆可期</p>
+                    <!-- <p class="line"></p> -->
+                    <!-- <p class="line"></p> -->
+                </div>
+                <h2 class="new-year-title">2026，您好！</h2>
+                <!-- <h2 class="new-year-title"></h2> -->
+                <div class="fireworks-container" id="fireworks3"></div>
+                <div class="countdown">
+                    <div class="countdown-title" id="countdown-title">已进入2026年</div>
+                    <div class="countdown-display">
+                        <div class="time-unit">
+                            <span id="hours">00</span>
+                            <div class="unit-label">小时</div>
+                        </div>
+                        <div class="separator">:</div>
+                        <div class="time-unit">
+                            <span id="minutes">00</span>
+                            <div class="unit-label">分钟</div>
+                        </div>
+                        <div class="separator">:</div>
+                        <div class="time-unit">
+                            <span id="seconds">00</span>
+                            <div class="unit-label">秒</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-number">3 / 3</div>
+        </section>
+        
+        <!-- 导航点 -->
+        <div class="page-dots">
+            <span class="dot active" data-page="0"></span>
+            <span class="dot" data-page="1"></span>
+            <span class="dot" data-page="2"></span>
+        </div>
+        
+        <!-- 翻页按钮 -->
+        <button class="nav-btn prev-btn" id="prevBtn" aria-label="上一页">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="nav-btn next-btn" id="nextBtn" aria-label="下一页">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <!-- 底部署名 -->
+        <div class="footer">
+            本网页由wwh协助完成
+        </div>
+    </div>
+
+    <!-- 烟花画布 -->
+    <canvas id="fireworksCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
